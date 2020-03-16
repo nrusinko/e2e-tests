@@ -32,7 +32,7 @@ spec:
       containers:
       - name: ansibletest
         image: openebs/ansible-runner:ci
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         env: 
           - name: ANSIBLE_STDOUT_CALLBACK
             value: default
